@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title>Come on, Feel the Bern</title>
+<title>Register to Vote! | Come on, Feel the Bern</title>
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet">
 <link rel="icon" type="image/png" href="./images/bookmark.png">
 <link rel="stylesheet" href="./css/reset.css">
@@ -11,24 +11,26 @@
 </head>
 
 <body>
-<div class="header">
-<span>Come on,</span> <span class="weight-400">Feel the Bern</span>
+
+<div class="countdown">
+<strong class="days">4</strong> days
+<br/>
+<strong class="hours">3</strong> hours
+<br/>
+<strong class="minutes">2</strong> minutes
+<br/>
+<strong class="seconds">1</strong> seconds
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rpm4rjejFgQ" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-dY77j6uBHI" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ggFitmOTSok" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8iCLhyfC3_8" frameborder="0" allowfullscreen></iframe>
+<a class="button button-register" href="https://covr.sos.ca.gov/?language=en-US" target="_blank">
+Register
+</a>
 
-<form class="signup">
-<div class="title">
-Keep in Touch
-</div>
-<input class="email" type="email" name="email" value="" placeholder="Email Address">
-<input class="submit" type="submit" name="submit" value="Subscribe">
-</form>
-
-<script src="./js/vendor/bluebird.js"></script>
+<script type="text/javascript">
+window.onerror = function (err) {
+    location.href = 'https://covr.sos.ca.gov/?language=en-US';
+};
+</script>
 <script src="./js/vendor/jquery.js"></script>
 <script src="./js/index.js" async></script>
 </body>
