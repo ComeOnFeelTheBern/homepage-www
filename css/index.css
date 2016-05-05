@@ -1,5 +1,8 @@
 body {
-    background-color: #120f0f;
+    background-color: #fff;
+    background-image: url(../images/state-bear4.png);
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
     font-family: "Open Sans", sans-serif;
     margin: 0;
     text-align: center;
@@ -34,21 +37,64 @@ strong {
 }
 
 .countdown {
-    color: #fff;
+    color: #a3a3a3;
     opacity: 0;
-    font-size: 24px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: right;
     padding: 32px 0 8px;
     transition: opacity 0.3s;
+    width: 183px;
+    margin: 0 auto;
+}
+
+.days-container {
+    padding-bottom: 10px;
+}
+
+.days {
+    font-size: 80px;
+    color: #039be5;
+}
+
+.days-text {
+    font-size: 32px;
+    color: #039be5;
+}
+
+.hours-container {
+    font-size: 28px;
+    padding-bottom: 17px;
+}
+
+.minutes-container {
+    font-size: 20px;
+    padding-bottom: 17px;
+}
+
+.seconds-container {
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.register-text {
+    color: #039be5;
+    font-size: 26px;
+    text-transform: none;
+    line-height: 1.3;
+    padding: 0 32px 10px;
 }
 
 .button {
-    background-color: #d31;
+    background-color: #ee5d16;
     border-radius: 7px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1618);
     color: #fff;
     display: inline-block;
-    font-size: 22px;
-    margin: 16px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 30px 0;
     padding: 16px 32px;
     text-decoration: none;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1618);
@@ -56,5 +102,13 @@ strong {
 }
 
 .button:hover {
-    background-color: #d20;
+    background-color: #e84e18;
+}
+
+.reminder-text {
+    color: #b2b2b2;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    padding: 40px 32px;
 }
