@@ -13,17 +13,19 @@ function getTimeRemaining() {
 
 function render() {
     var remaining = getTimeRemaining();
-    var $countdown = $('.countdown');
+    $('.countdown .days').text(remaining.days);
+    $('.countdown .hours').text(remaining.hours);
+    $('.countdown .minutes').text(remaining.minutes);
+    $('.countdown .seconds').text(remaining.seconds);
+}
 
-    $countdown.css({
+function initialRender() {
+    render();
+    
+    $('.countdown').css({
         opacity: 1,
     });
-
-    $countdown.find('.days').text(remaining.days);
-    $countdown.find('.hours').text(remaining.hours);
-    $countdown.find('.minutes').text(remaining.minutes);
-    $countdown.find('.seconds').text(remaining.seconds);
 }
 
 setInterval(render, 1000);
-render();
+initialRender();
