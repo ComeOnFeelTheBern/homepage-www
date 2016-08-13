@@ -3,6 +3,9 @@ var deadline = new Date(1463986800000);
 function getTimeRemaining() {
     var remaining = {};
     var now = new Date();
+    if (now > deadline) {
+        now = deadline;
+    }
     var milliseconds = deadline - now;
     remaining.days = Math.floor(milliseconds / (1000 * 60 * 60 * 24));
     remaining.hours = Math.floor(milliseconds / (1000 * 60 * 60) % 24);
